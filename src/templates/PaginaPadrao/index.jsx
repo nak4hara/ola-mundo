@@ -1,12 +1,15 @@
 import { Outlet } from "react-router-dom";
 import Banner from '../../components/Banner'
 
-export default function PaginaPadrao() {
+export default function PaginaPadrao({ children }) {
     return (
         <main>
             <Banner />
 
             <Outlet />
+
+            {children}
+
             {/*
             ---------- Rotas aninhadas ---------
             Permite que seja usado como template
