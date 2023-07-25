@@ -4,6 +4,7 @@ import AboutMe from './pages/AboutMe'
 import Menu from './components/Menu'
 import Rodape from './components/Rodape'
 import PaginaPadrao from './templates/PaginaPadrao'
+import Post from './pages/Post'
 
 function AppRoutes() {
 
@@ -16,6 +17,7 @@ function AppRoutes() {
           <Route path='/' element={<PaginaPadrao />}>
             <Route index element={<Home />} />
             <Route path='about-me' element={<AboutMe />} />
+            <Route path='posts/:id' element={<Post />} />
           </Route>
 
           <Route path='*' element={<div>Page not found!</div>} />
